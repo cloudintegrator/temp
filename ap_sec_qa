@@ -1,0 +1,35 @@
+What authentication mechanisms are required? (OAuth 2.0, JWT, Basic Auth, API Key, SAML, OpenID Connect, etc.)
+Which identity provider (IdP) will be used? (Okta, Azure AD, PingFederate, Keycloak, etc.)
+Are there different authentication methods for internal vs. external users?
+Will there be role-based access control (RBAC) or attribute-based access control (ABAC)?
+Should multi-factor authentication (MFA) be enforced for API access?
+Will an API Gateway be used for security enforcement? (Anypoint API Manager, AWS API Gateway, Apigee, etc.)
+Are there rate limits or throttling requirements for API consumers? (E.g., 100 requests per minute per client.)
+Should different rate limits be applied based on user roles or subscription tiers?
+Should burst traffic handling be configured to prevent API abuse?
+Will APIs have quotas per client to prevent overuse?
+Should all APIs enforce HTTPS (TLS 1.2/1.3)?
+Is mutual TLS (mTLS) required for authentication between services?
+Are there specific encryption requirements for request/response payloads?
+Will API requests include sensitive data that needs additional encryption (e.g., PII, financial data)?
+Should API tokens/keys be rotated periodically?
+How should APIs handle threats like SQL injection, XSS, and CSRF?
+Are there requirements for Web Application Firewalls (WAFs) or Intrusion Detection Systems (IDS)?
+Will IP whitelisting/blacklisting be implemented?
+Is API traffic monitoring required for anomaly detection?
+Should security headers be enforced (CORS, Content-Security-Policy, etc.)?
+Which logs need to be captured (request/response, authentication attempts, errors)?
+Where should logs be stored (Anypoint Monitoring, Splunk, ELK, CloudWatch, etc.)?
+How long should logs be retained for compliance?
+Are there audit trail requirements for API access?
+Does the API need to comply with standards like GDPR, HIPAA, PCI-DSS, SOC2?
+Will API keys be distributed securely to consumers?
+Should API access be restricted based on geographic location (Geo-fencing)?
+Are there requirements for API sandbox environments for testing?
+Should developers have restricted access to production APIs?
+How will API deprecation and versioning be handled securely?
+What happens if an API key/token is compromised?
+Is there an automated process for revoking access to compromised credentials?
+What is the plan for handling DDoS attacks?
+Should APIs be backed by multiple regions for failover?
+Who is responsible for API security monitoring and incident response?
